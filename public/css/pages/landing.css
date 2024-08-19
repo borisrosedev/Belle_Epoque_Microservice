@@ -1,0 +1,36 @@
+.landing__main {
+    align-items: center;
+    justify-content: center;
+
+    .landing__welcome {
+        display: flex;
+        width: 300px;
+
+        .message {
+            background-color: var(--primary-color);
+            box-shadow: 0 0 5px #000;
+            figure {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+    
+                img {
+                    border-radius: 50%;
+                    opacity: 0;
+                    animation: zoom-in 1s ease-in-out forwards;
+                }
+            }
+
+        }
+       
+
+    }
+
+
+
+    .landing__actions {
+        display: flex;
+        margin-block: 10px;
+    }
+}

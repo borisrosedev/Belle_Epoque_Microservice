@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr"> 
+    <head>
+        <meta charset="utf-8">
+        <link href="{{ asset('/css/styles.css') }}" rel="stylesheet"/>
+        <link rel="shortcut icon" href="{{ asset('/images/chef.jpg') }}">
+        <script src="{{ absolute_url('https://kit.fontawesome.com/1b1fa6fbda.js')}}" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        {# une bonne idée serait d'étendre base.html.twig #}
+        <header class="app__header">
+            <a href=""> 
+                <figure>
+                      <img src="{{ asset('/images/chef.jpg')}}" alt="">
+                </figure>
+                <span>Belle Epoque</span>
+            </a>
+        </header>
+        <main class="app__main landing__main">
+            <section class="landing__welcome">
+                <article class="message">
+                    <figure>
+                        <img src="{{ asset('/images/waitress.jpg')}}" alt="avatar of assistance in the Belle Epoque App">
+                    </figure>
+                    <section>
+                        <p>{{ welcome_message }}</p>
+                    </section>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

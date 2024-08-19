@@ -1,0 +1,23 @@
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    & > section:first-of-type {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        padding-inline: 5px;
+    }
+  
+    & > section:last-of-type {
+        display: flex;
+        width: 80%;
+        padding-inline: 5px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
